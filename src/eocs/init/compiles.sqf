@@ -3,24 +3,32 @@ object_hasMaterial = compile preprocessFileLineNumbers "\z\addons\eocs\compile\o
 object_removeItems = compile preprocessFileLineNumbers "\z\addons\eocs\compile\object_removeItems.sqf";
 serializeExtendedObjectData = compile preprocessFileLineNumbers "\z\addons\eocs\compile\serializeExtendedObjectData.sqf";
 
-FNC_GetPlayerUID = {
+FNC_GetPlayerUID =
+{
 	private ["_object","_version","_PID"];
 	_object = _this select 0;
 	_version = productVersion select 3;
-	if (DayZ_UseSteamID) then {
-		_PID = GetPlayerUID _object;
-	} else {
-		if (_version >= 125548) then {
+	if (DayZ_UseSteamID) then
+	{
+		_PID = getPlayerUID _object;
+	}
+	else
+	{
+		if (_version >= 125548) then
+		{
 			_PID = call (compile "GetPlayerUIDOld _object");
-		} else {
-			_PID = GetPlayerUID _object;
+		}
+		else
+		{
+			_PID = getPlayerUID _object;
 			diag_log format["Your game version, %1, is less than the required for the old UID system; using Steam ID system instead. Update to 1.63.125548 (or latest steam beta)", _version];
 		};
 	};
 	_PID;
 };
 	
-if (!isDedicated) then {
+if (!isDedicated) then
+{
 	zombie_generate = 			compile preprocessFileLineNumbers "\z\addons\eocs\compile\zombie_generate.sqf";
 	player_doActionLoop = 		compile preprocessFileLineNumbers "\z\addons\eocs\compile\player_doActionLoop.sqf";
 	player_pack_tempobject = 	compile preprocessFileLineNumbers "\z\addons\eocs\actions\player_pack_tempobject.sqf";
@@ -29,11 +37,12 @@ if (!isDedicated) then {
 	player_upgrade_building = 	compile preprocessFileLineNumbers "\z\addons\eocs\actions\player_upgrade_building.sqf";
 	player_LockUnlock = 		compile preprocessFileLineNumbers "\z\addons\eocs\actions\player_LockUnlock.sqf";
 	player_craftItem = 			compile preprocessFileLineNumbers "\z\addons\eocs\actions\player_craftItem.sqf";
-	if(DZEOCS_SnapSys) then {
+	if (DZEOCS_SnapSys) then
+	{
 		dayz_spaceInterrupt = 	compile preprocessFileLineNumbers "\z\addons\eocs\external\snap_build\dayz_spaceInterrupt.sqf";
 		player_build =			compile preprocessFileLineNumbers "\z\addons\eocs\external\snap_build\player_build.sqf";
 		snap_build = 			compile preprocessFileLineNumbers "\z\addons\eocs\external\snap_build\snap_build.sqf";
 	};
 };
 
-[] execVM "\z\addons\eocs\external\killzonekid\PositionToString.sqf";
+call compile preprocessFileLineNumbers "\z\addons\eocs\external\killzonekid\PositionToString.sqf";

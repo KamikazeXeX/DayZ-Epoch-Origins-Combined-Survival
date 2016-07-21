@@ -1,4 +1,4 @@
-#include "..\CfgLoot.hpp"
+#include "\z\addons\eocs\loottables\CfgLoot.hpp"
 
 class CfgBuildingLoot {
 	class Default {
@@ -688,7 +688,7 @@ class CfgBuildingLoot {
 		};
 	};
 
-	#include "..\CfgBuildingPos.hpp"
+	#include "\z\addons\eocs\loottables\CfgBuildingPos.hpp"
 	//If you want to copypast your loottable to your mission w/o
 	//changing something on the lootPos then use the a include instead of copypasting the CfgBuildingPos.hpp
 

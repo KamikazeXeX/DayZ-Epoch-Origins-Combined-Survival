@@ -1,12 +1,15 @@
-class CfgLootSmall {
-	trash[] = {		
+class CfgLootSmall
+{
+	trash[] =
+	{
 		{"TrashTinCan",0.5},
 		{"TrashJackDaniels",0.05},
 		{"ItemSodaEmpty",0.25},
 		{"ItemTrashToiletpaper",0.1},
 		{"ItemTrashRazor",0.1}
 	};
-	civilian[] = {
+	civilian[] =
+	{
 		{"FoodCanUnlabeled",0.07},
 		{"TrashJackDaniels",0.09},
 		{"ItemSodaEmpty",0.09},
@@ -25,7 +28,8 @@ class CfgLootSmall {
 		{"FoodBioMeat",0.01},
 		{"8Rnd_9x18_MakarovSD",0.01}
 	};
-	office2[] = {
+	office2[] =
+	{
 		{"FoodCanUnlabeled",0.07},
 		{"TrashJackDaniels",0.09},
 		{"ItemSodaEmpty",0.09},
@@ -44,7 +48,8 @@ class CfgLootSmall {
 		{"FoodBioMeat",0.01},
 		{"8Rnd_9x18_MakarovSD",0.01}
 	};
-	food[] = {	
+	food[] = 
+
 		//trash
 		{"TrashTinCan",0.09},
 		{"TrashJackDaniels",0.12},
@@ -60,7 +65,8 @@ class CfgLootSmall {
 		{"FoodPistachio",0.05},
 		{"FoodNutmix",0.04}
 	};
-	office[] = {
+	office[] =
+	{
 		{"FoodCanUnlabeled",0.06},
 		{"ItemSodaEmpty",0.06},
 		{"ItemSodaCoke",0.06},
@@ -89,7 +95,8 @@ class CfgLootSmall {
 		{"HandChemRed",0.03},
 		{"ItemHeatPack",0.03}
 	};
-	generic[] = {
+	generic[] =
+	{
 		{"FoodCanUnlabeled",0.06},
 		{"ItemSodaEmpty",0.06},
 		{"ItemSodaCoke",0.06},
@@ -118,7 +125,8 @@ class CfgLootSmall {
 		{"HandChemRed",0.03},
 		{"ItemHeatPack",0.04}
 	};
-	medical[] = {
+	medical[] =
+	{
 		{"ItemBandage",0.4},
 		{"ItemPainkiller",0.15},
 		{"ItemMorphine",0.2},
@@ -126,7 +134,8 @@ class CfgLootSmall {
 		{"ItemAntibiotic",0.1},
 		{"ItemHeatPack",0.05}
 	};
-	hospital[] = {
+	hospital[] =
+	{
 		{"ItemBandage",0.33},
 		{"ItemPainkiller",0.16},
 		{"ItemMorphine",0.13},
@@ -134,7 +143,8 @@ class CfgLootSmall {
 		{"ItemBloodbag",0.17},
 		{"ItemAntibiotic",0.12}
 	};
-	military[] = {
+	military[] =
+	{
 		{"FoodCanUnlabeled",0.09},
 		{"ItemSodaEmpty",0.04},
 		{"ItemSodaCoke",0.01},
@@ -176,7 +186,8 @@ class CfgLootSmall {
 		{"20Rnd_B_765x17_Ball",0.04},
 		{"30Rnd_9x19_UZI_SD",0.01}
 	};
-	policeman[] = {
+	policeman[] =
+	{
 		{"ItemBandage",0.3},
 		{"7Rnd_45ACP_1911",0.08},
 		{"6Rnd_45ACP",0.08},
@@ -188,12 +199,12 @@ class CfgLootSmall {
 		{"SmokeShell",0.04},
 		{"ItemHotwireKit",0.01}
 	};
-
-	hunter[] = {
+	hunter[] =
+	{
 		{"FoodMRE",0.01}
 	};
-
-	worker[] = {
+	worker[] =
+	{
 		{"FoodCanUnlabeled",0.09},
 		{"TrashJackDaniels",0.10},
 		{"ItemSodaEmpty",0.10},
@@ -208,7 +219,8 @@ class CfgLootSmall {
 		{"ItemComboLock",0.04},
 		{"ItemSledgeHead",0.02}
 	};
-	clothes[] = {
+	clothes[] =
+	{
 		{"Skin_RU_Policeman_DZ",0.13},
 		{"Skin_Pilot_EP1_DZ",0.12},
 		{"Skin_Functionary1_EP1_DZ",0.1},
@@ -221,7 +233,8 @@ class CfgLootSmall {
 		{"Skin_SurvivorWpink_DZ",0.09},
 		{"Skin_SurvivorWurban_DZ",0.07}
 	};
-	militaryclothes[] = {
+	militaryclothes[] =
+	{
 		{"Skin_Camo1_DZ",0.1},
 		{"Skin_Sniper1_DZ",0.08},
 		{"Skin_Rocket_DZ",0.05},
@@ -236,7 +249,8 @@ class CfgLootSmall {
 		{"Skin_CZ_Soldier_Sniper_EP1_DZ",0.04},
 		{"Skin_Graves_Light_DZ",0.09}
 	};
-	specialclothes[] = {
+	specialclothes[] =
+	{
 		{"Skin_Ins_Soldier_GL_DZ",0.1},
 		{"Skin_GUE_Commander_DZ",0.08},
 		{"Skin_Bandit1_DZ",0.13},
@@ -253,7 +267,8 @@ class CfgLootSmall {
 		{"Skin_GUE_Soldier_CO_DZ",0.04},
 		{"Skin_GUE_Soldier_2_DZ",0.04}
 	};
-	machinegunammoexpl[] = {
+	machinegunammoexpl[] =
+	{
 		{"100Rnd_556x45_BetaCMag",0.20},
 		{"75Rnd_545x39_RPK",0.20},
 		{"100Rnd_556x45_M249",0.15},
@@ -263,7 +278,8 @@ class CfgLootSmall {
 		{"MAAWS_HEAT",0.01},
 		{"PipeBomb",0.01}
 	};
-	pistols[] = {
+	pistols[] =
+	{
 		{"Makarov",0.25},
 		{"Colt1911",0.23},
 		{"revolver_EP1",0.20},

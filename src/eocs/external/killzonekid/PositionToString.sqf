@@ -1,4 +1,5 @@
-KK_fnc_floatToString = {
+KK_fnc_floatToString =
+{
 	private "_arr";
 	if (abs (_this - _this % 1) == 0) exitWith { str _this };
 	_arr = toArray str abs (_this % 1);
@@ -8,7 +9,8 @@ KK_fnc_floatToString = {
 	) + _arr - [32])
 };
 
-KK_fnc_positionToString = {
+KK_fnc_positionToString =
+{
 	format [
 		"[%1,%2,%3]",
 		_this select 0 call KK_fnc_floatToString,
